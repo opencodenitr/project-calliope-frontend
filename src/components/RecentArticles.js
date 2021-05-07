@@ -56,6 +56,10 @@ const Heading = styled(Typography)`
   margin: 150px 24px 20px;
   text-align: left;
   color: #087d45;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    margin: 70px 0 20px 0;
+  }
 `;
 
 const Partials = { heading: 'Recent Articles' };
@@ -67,8 +71,8 @@ const RecentArticles = React.memo(function SolidCards() {
   return (
     <Container maxWidth='lg'>
       <Heading variant='h3'>{Partials.heading}</Heading>
-      <>
-        <Grid item container spacing={4}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Grid style={{ marginLeft: '-50px' }} item container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
             <ArticleCard
               classes={styles}
@@ -102,7 +106,7 @@ const RecentArticles = React.memo(function SolidCards() {
             />
           </Grid>
         </Grid>
-      </>
+      </div>
     </Container>
   );
 });
