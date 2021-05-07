@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Homepage, TeamPage } from './pages';
+import { Homepage } from './pages';
+import MainTeam from "./pages/TeamPage"
 import { Navbar, Footer } from './shared';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Homepage} />
-          <Route exact path='/team' component={TeamPage} />
+          <Route exact path='/team' component={MainTeam} />
         </Switch>
         <Footer />
       </Router>
