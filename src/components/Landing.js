@@ -10,10 +10,15 @@ const Wrapper = styled(Container)`
   align-items: center;
 `;
 
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+`;
+
 function Landing() {
   return (
     <Wrapper maxWidth='md'>
-      <img src={background} alt='Landing Background' />
+      <Image src={background} alt='Landing Background' />
     </Wrapper>
   );
 }
