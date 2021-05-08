@@ -1,13 +1,5 @@
 import React from 'react';
-import Color from 'color';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Container from '@material-ui/core/Container';
-import image from '../assets/images/article1.jpg';
+import { Typography, Card, CardActionArea, CardContent, CardMedia } from '@material-ui/core';
 
 const ArticleCard = ({ classes, image, title, subtitle }) => {
   return (
