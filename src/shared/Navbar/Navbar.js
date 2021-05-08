@@ -16,7 +16,7 @@ export default function Navbar() {
     { item: 'home', url: '/' },
     { item: 'about', url: '/about' },
     { item: 'team', url: '/team' },
-    { item: 'legacy', url: '/legacy' },
+    { item: 'Editors-Desk', url: '/Editors' },
     { item: 'contacts', url: '/contacts' },
     { item: 'admin', url: '/admin' },
   ];
