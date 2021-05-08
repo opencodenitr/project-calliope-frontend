@@ -17,7 +17,7 @@
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
-  border-radius: 50%;
+  width:20%;
 }
 
 .nav-menu {
@@ -79,6 +79,7 @@
     top: auto;
     left: 0;
     transform: translate(25% 50%);
+    width:40%;
   }
 
   .menu-icon {
