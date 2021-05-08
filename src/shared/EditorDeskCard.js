@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   margin: 20px;
   padding: 15px;
   background-color: #e5e5e5;
-  border-radius: 30px;
+  border-radius: 10px;
   @media (max-width: 768px) {
     flex-direction: column;
     margin: 0 auto;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  border-radius: 30px;
+  border-radius: 10px;
   width: 285px;
   @media (max-width: 768px) {
     border-radius: 10px;
