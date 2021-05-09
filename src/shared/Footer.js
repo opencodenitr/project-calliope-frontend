@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '20vh',
+    minHeight: '22vh',
     textAlign: 'center',
     paddingTop: '20px',
   },
@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
     // marginTop: theme.spacing(8),
   },
   logo: {
-    height: '40px',
+    height: '45px',
+    width:'30%'
   },
   footerIcon: {
     margin: '0 20px',
