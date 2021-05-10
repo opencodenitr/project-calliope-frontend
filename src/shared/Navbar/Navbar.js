@@ -17,7 +17,7 @@ export default function Navbar() {
     { item: 'about', url: '/about' },
     { item: 'team', url: '/team' },
     { item: 'Editors-Desk', url: '/Editors' },
-    { item: 'contacts', url: '/contacts' },
+    { item: 'Sundary', url: '/sundary' },
     { item: 'admin', url: '/admin' },
   ];
 
