@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Homepage } from './pages';
-import MainTeam from "./pages/TeamPage";
-import Editors from "./pages/EditorsPage"
+import { Homepage, TeamPage, EditorsPage } from './pages';
 import { Navbar, Footer } from './shared';
 
 function App() {
@@ -12,8 +10,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Homepage} />
-          <Route exact path='/team' component={MainTeam} />
-          <Route exact path='/Editors' component={Editors} />
+          <Route exact path='/team' component={TeamPage} />
+          <Route exact path='/Editors' component={EditorsPage} />
         </Switch>
         <Footer />
       </Router>
