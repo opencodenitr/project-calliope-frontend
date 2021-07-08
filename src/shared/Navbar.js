@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { Menu, Close } from '@material-ui/icons';
-import logo from '../../assets/images/logo.png';
-import './Navbar.css';
+import logo from '../assets/images/logo.png';
+import '../assets/styles/Navbar.css';
 
 export default function Navbar() {
   const [click, setClick] = useState(false);
