@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { NavSection, StyledHamburger, StyledLogo } from '../styles/nav.styles';
 import { Container } from './container';
-import SiteConfig from '../config/index.json';
+// import SiteConfig from '../config/index.json';
 import { MenuContext } from '.';
 import Dropdown from './dropdown';
 
