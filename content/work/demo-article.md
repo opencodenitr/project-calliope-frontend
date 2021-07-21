@@ -2,7 +2,7 @@
 title: Demo Article
 date: '2020-01-04'
 slug: 'demo-article'
-description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,'
+description: 'Article for demo purpose'
 category: selected
 tags:
   - fan-fiction
