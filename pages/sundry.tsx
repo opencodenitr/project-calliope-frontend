@@ -7,7 +7,7 @@ const Sundry = ({ articles }) => {
   return (
     <Layout
       pathname={'/sundry'}
-      pageTitle=''
+      pageTitle='Sundry'
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
       <Container>
