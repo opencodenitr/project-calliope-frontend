@@ -7,7 +7,7 @@ const FanFiction = ({ articles }) => {
   return (
     <Layout
       pathname={'/fan-fiction'}
-      pageTitle=''
+      pageTitle='Fan Fiction'
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
       <Container>
