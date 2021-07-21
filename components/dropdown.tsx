@@ -32,7 +32,7 @@ export default function Dropdown() {
       >
         <MenuItem onClick={handleClose}>
           <Link href='/fan-fiction'>
-            <a style={{ textDecoration: 'none' }}>Fac Fiction</a>
+            <a style={{ textDecoration: 'none' }}>Fan Fiction</a>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>

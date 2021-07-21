@@ -1,8 +1,9 @@
 import React from 'react';
-import { Layout, Container, Cards } from '../components';
+import { Layout, Container, LegacyCard } from '../components';
 import { getContentList } from '../lib/content';
+import { CenterElements, Heading } from '../styles/legacy.styles';
 
-const EditorsDesk = () => {
+const EditorsDesk = ({ articles }) => {
   return (
     <Layout
       pathname={'/editorsDesk'}
@@ -10,7 +11,12 @@ const EditorsDesk = () => {
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
       <Container>
-        <p className='page-intro'>EditorsDesk Page</p>
+        <Heading>Editor's Desk</Heading>
+        <CenterElements>
+          {articles.map((article, idx) => (
+            <LegacyCard key={idx} article={article} />
+          ))}
+        </CenterElements>
       </Container>
     </Layout>
   );

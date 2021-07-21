@@ -1,8 +1,9 @@
 import React from 'react';
-import { Layout, Container, Cards } from '../components';
+import { Layout, Container, LegacyCard } from '../components';
 import { getContentList } from '../lib/content';
+import { CenterElements, Heading } from '../styles/legacy.styles';
 
-const FanFiction = () => {
+const FanFiction = ({ articles }) => {
   return (
     <Layout
       pathname={'/fan-fiction'}
@@ -10,7 +11,12 @@ const FanFiction = () => {
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
       <Container>
-        <p className='page-intro'>Fan Fiction Page</p>
+        <Heading>Fan Fiction</Heading>
+        <CenterElements>
+          {articles.map((article, idx) => (
+            <LegacyCard key={idx} article={article} />
+          ))}
+        </CenterElements>
       </Container>
     </Layout>
   );

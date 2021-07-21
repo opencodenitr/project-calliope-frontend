@@ -1,8 +1,9 @@
 import React from 'react';
-import { Layout, Container, Cards } from '../components';
+import { Layout, Container, LegacyCard } from '../components';
 import { getContentList } from '../lib/content';
+import { CenterElements, Heading } from '../styles/legacy.styles';
 
-const Sundry = () => {
+const Sundry = ({ articles }) => {
   return (
     <Layout
       pathname={'/sundry'}
@@ -10,7 +11,12 @@ const Sundry = () => {
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
       <Container>
-        <p className='page-intro'>Sundry Page</p>
+        <Heading>Sundry</Heading>
+        <CenterElements>
+          {articles.map((article, idx) => (
+            <LegacyCard key={idx} article={article} />
+          ))}
+        </CenterElements>
       </Container>
     </Layout>
   );
