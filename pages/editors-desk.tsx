@@ -6,7 +6,7 @@ import { CenterElements, Heading } from '../styles/legacy.styles';
 const EditorsDesk = ({ articles }) => {
   return (
     <Layout
-      pathname={'/editorsDesk'}
+      pathname={'/editors-desk'}
       pageTitle="Editor's Desk"
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
