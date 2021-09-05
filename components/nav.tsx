@@ -6,6 +6,7 @@ import { Container } from './container';
 // import SiteConfig from '../config/index.json';
 import { MenuContext } from '.';
 import Dropdown from './dropdown';
+import AboutDropdown from './aboutDropdown';
 
 const Nav = () => {
   const menuContext = useContext(MenuContext);
@@ -27,26 +28,24 @@ const Nav = () => {
 
             <ul className='navLinkList'>
               <li className='navLinkItem'>
-                <Link href='/'>
-                  <a className='navLink'>Home</a>
-                </Link>
-              </li>
-              <li className='navLinkItem'>
-                <Link href='/about'>
-                  <a className='navLink'>About</a>
-                </Link>
-              </li>
-              <li className='navLinkItem'>
-                <Link href='/team'>
-                  <a className='navLink'>Team</a>
-                </Link>
-              </li>
-              <li className='navLinkItem'>
                 <Dropdown />
               </li>
               <li className='navLinkItem'>
                 <Link href='/contacts'>
-                  <a className='navLink'>Contacts</a>
+                  <a className='navLink'>Comics</a>
+                </Link>
+              </li>
+              <li className='navLinkItem'>
+                <Link href='/scribbles'>
+                  <a className='navLink'>Scribbles</a>
+                </Link>
+              </li>
+              <li className='navLinkItem'>
+                <AboutDropdown />
+              </li>
+              <li className='navLinkItem'>
+                <Link href='/contacts'>
+                  <a className='navLink'>Legacy</a>
                 </Link>
               </li>
             </ul>

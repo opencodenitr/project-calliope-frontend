@@ -21,7 +21,7 @@ export default function Dropdown() {
         aria-haspopup='true'
         onClick={handleClick}
       >
-        Legacy
+        Archive
       </Typography>
       <Menu
         id='simple-menu'
@@ -31,23 +31,18 @@ export default function Dropdown() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}>
-          <Link href='/fan-fiction'>
-            <a style={{ textDecoration: 'none' }}>Fan Fiction</a>
+          <Link href='/stories'>
+            <a style={{ textDecoration: 'none' }}>Stories</a>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href='/sundry'>
-            <a style={{ textDecoration: 'none' }}>Sundry</a>
+          <Link href='/poems'>
+            <a style={{ textDecoration: 'none' }}>Poems</a>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href='/scribbles'>
-            <a style={{ textDecoration: 'none' }}>Scribbles</a>
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <Link href='/editors-desk'>
-            <a style={{ textDecoration: 'none' }}>Editor's Desk</a>
+          <Link href='/miscellaneous'>
+            <a style={{ textDecoration: 'none' }}>Miscellaneous</a>
           </Link>
         </MenuItem>
       </Menu>

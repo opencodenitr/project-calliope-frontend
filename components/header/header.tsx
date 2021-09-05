@@ -14,13 +14,15 @@ const header = ({ pathname, title }: IHeader) => {
   switch (pathname) {
     case '/':
       return <HomeHeader />;
-    case '/fan-fiction':
+    case '/stories':
       return <NullHeader headingTitle={title} />;
     case '/scribbles':
       return <NullHeader headingTitle={title} />;
-    case '/sundry':
+    case '/poems':
       return <NullHeader headingTitle={title} />;
-    case '/editors-desk':
+    case '/miscellaneous':
+      return <NullHeader headingTitle={title} />;
+    case '/about':
       return <NullHeader headingTitle={title} />;
     default:
       return <PageHeader headingTitle={title} />;

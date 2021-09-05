@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Container } from '../components';
+import { Layout, Container, AboutComponent } from '../components';
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
       pageDescription='Articles and technical blogs about Full Stack Web Development, Open-source and Communities'
     >
       <Container>
-        <p className='page-intro'>About Page</p>
+        <AboutComponent />
       </Container>
     </Layout>
   );
