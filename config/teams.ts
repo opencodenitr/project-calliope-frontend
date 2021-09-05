@@ -69,7 +69,7 @@ export const nineteen = [
     por: 'Editor-in-Chief',
   },
   {
-    name: 'Jenn Doe',
+    name: 'Mark Zuck',
     image: 'avatar.jpeg',
     eb: true,
     por: 'Editor-in-Chief',

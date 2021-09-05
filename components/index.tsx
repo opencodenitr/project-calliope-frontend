@@ -8,3 +8,4 @@ export { default as RecentArticles } from './RecentArticles';
 export { default as EditorDesk } from './EditorDesk';
 export { default as ProfileCard } from './TeamCard';
 export { default as LegacyCard } from './LegacyCard';
+export { default as AboutComponent } from './About';
