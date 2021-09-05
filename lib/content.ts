@@ -2,10 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { v4 as uuid } from 'uuid';
-import { exception } from 'console';
 import remark from 'remark';
 import html from 'remark-html';
 import remarkPrism from 'remark-prism';
+import { error } from 'console';
 import { IContentData } from '../pages/articles/[id]';
 
 const workDirectory = path.join(process.cwd(), 'content', 'work');
@@ -35,7 +35,7 @@ export const getAllContentIds = (contentType: IContentType) => {
       break;
 
     default:
-      throw new exception('You have to provide a content type');
+      throw new error('You have to provide a content type');
   }
 
   // return the slug of all the content IDs
@@ -76,7 +76,7 @@ export const getContentData = async (id: string, contentType: IContentType) => {
       break;
 
     default:
-      throw new exception('You have to provide a content type');
+      throw new error('You have to provide a content type');
   }
 
   // loop through all the content types and compare the slug to get the filename
